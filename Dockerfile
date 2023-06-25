@@ -29,7 +29,9 @@ RUN make
 # Copy to image
 ################################
 FROM alpine
+WORKDIR app
 
-COPY --from=build /source/noip2 /bin
+COPY --from=build /source/noip2 .
+COPY ./run-noip.sh .
 
-ENTRYPOINT ["noip2"]
+ENTRYPOINT ["sh", "/app/run-noip.sh"]

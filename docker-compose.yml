@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  noip:
+    container_name: noip
+    image: noip:latest
+    networks:
+      noip:
+    volumes:
+      - noip:/config
+
+networks:
+  noip:
+
+volumes:
+  noip:
+    name: noip
