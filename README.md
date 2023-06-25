@@ -23,7 +23,7 @@ This will create the container and the volume but NOT RUN IT.
 
 Use this command to interactively create the configuration file.
 
-`sudo docker run -v noip:/config -it --rm noip:latest -C`
+`sudo docker run --entrypoint /app/noip2 -v noip:/config -it --rm noip:latest -C -c /config/no-ip2.conf`
 
 # Misc
 
