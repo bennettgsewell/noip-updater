@@ -1,5 +1,5 @@
 # noip-updater
-My personal dockerized no-ip dynamic updated
+My personal dockerized no-ip dynamic updater
 
 ## Building and running the image
 
